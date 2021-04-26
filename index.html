@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ <!--arahan javaScript internal boleh letak dalam head dan dalam body-->
+</head>
+<body>
+    <p>Puteri Farah Diba Natasha <br> 18DDT19F1133</p>
+
+     <!--<h1 onclick="alert('Hello');">Picit ler</h1> 
+   arahan inline, bila user tekan baru keluar alert box-->
+
+    <!--<script> alert('Hello'); </script>
+   automatic keluar alert box bila refresh web-->
+
+   <script src="script.js"></script>
+   <!--arahan javascript direct akan terus run bila bukak page browser-->
+
+   <h1 onclick="picit()">Picit ler</h1>
+   <script>function picit() {
+       alert("HELLO");}
+       </script>
+
+<input type="text" id="firstnama">
+<input type ="text" id="lastnama">
+<button type="button" onclick="papar();">Papar</button>
+<span id="hasil"></span> <!--span ni akan kekal dalam line tu jugak-->
+
+<script>
+function papar() {
+    let fnama= document.getElementById('firstnama').value;
+    let lnama = document.getElementById('lastnama').value
+    document.getElementById('hasil').innerHTML = '<b>cik</b> ' + fnama + lnama;
+}
+</script>
+</body>
+</html>
